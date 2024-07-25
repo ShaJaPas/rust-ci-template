@@ -34,6 +34,13 @@ jobs:
           components: rustfmt
       - name: cargo clippy
         run: cargo clippy
+  cargo-deny:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: EmbarkStudios/cargo-deny-action@v1
   msrv:
     # check that we can build using the minimal rust version that is specified by this crate
     runs-on: ubuntu-latest
