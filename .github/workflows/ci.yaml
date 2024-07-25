@@ -41,6 +41,18 @@ jobs:
         with:
           submodules: true
       - uses: EmbarkStudios/cargo-deny-action@v1
+  cargo-udeps:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: nightly
+          override: true
+      - uses: aig787/cargo-udeps-action@v1
+        with:
+          version: 'latest'
+          args: '--all-targets'
   msrv:
     # check that we can build using the minimal rust version that is specified by this crate
     runs-on: ubuntu-latest
