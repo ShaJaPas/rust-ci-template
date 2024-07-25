@@ -1,0 +1,3 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![CI](https://github.com/ShaJaPas/rust-ci-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/ShaJaPas/rust-ci-template/actions/workflows/ci.yaml)
+[![Codecov](https://codecov.io/github/ShaJaPas/rust-ci-template/coverage.svg?branch=master)](https://app.codecov.io/gh/ShaJaPas/rust-ci-template)
